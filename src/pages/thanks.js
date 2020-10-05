@@ -9,10 +9,14 @@ class Thanks extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <main>
-          <h1>Thank you for subscribing.</h1>
           <p>
-            You are now confirmed. You can expect to receive emails as I create
-            new content.
+            This is my personal blog. Inspired by{' '}
+            <a href="https://overreacted.io/">overreacted.io's</a> blog.
+          </p>
+          <p>
+            Forked from here :{' '}
+            <a href="https://github.com/gaearon/overreacted.io">github</a>.
+            Thanks Dan!
           </p>
         </main>
       </Layout>
@@ -21,7 +25,7 @@ class Thanks extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query ThanksSiteData {
+  query AboutSiteData {
     site {
       siteMetadata {
         title

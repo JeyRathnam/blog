@@ -11,9 +11,9 @@ class Bio extends React.Component {
           marginBottom: rhythm(2),
         }}
       >
-        <img
+        {/* <img
           src={profilePic}
-          alt={`Dan Abramov`}
+          alt={`Jeyachandran Rathnam`}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
@@ -21,11 +21,13 @@ class Bio extends React.Component {
             height: rhythm(2),
             borderRadius: '50%',
           }}
-        />
-        <p style={{ maxWidth: 310 }}>
+        /> */}
+        <p style={{ maxWidth: 510 }}>
           Personal blog by{' '}
-          <a href="https://mobile.twitter.com/dan_abramov">Dan Abramov</a>.{' '}
-          I&nbsp;explain with words and code.
+          <a href="https://mobile.twitter.com/jairathnem">
+            Jeyachandran Rathnam
+          </a>
+          .{' '}
         </p>
       </div>
     );

@@ -104,6 +104,16 @@ class Layout extends React.Component {
             }}
           >
             {this.renderHeader()}
+            <Link
+              style={{
+                boxShadow: 'none',
+                textDecoration: 'none',
+                color: 'rgb(255, 167, 196)',
+              }}
+              to={'/thanks'}
+            >
+              About
+            </Link>
             {this.state.theme !== null ? (
               <Toggle
                 icons={{
