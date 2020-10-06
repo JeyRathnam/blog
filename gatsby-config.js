@@ -126,7 +126,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Jeyachandran Rathnam's Overreacted Blog RSS Feed",
+            title: "Jeyachandran Rathnam's Blog RSS Feed",
           },
         ],
       },
