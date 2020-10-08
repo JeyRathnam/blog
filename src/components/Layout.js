@@ -1,11 +1,10 @@
-import React from 'react';
 import { Link } from 'gatsby';
-import Toggle from './Toggle';
+import React from 'react';
 import Helmet from 'react-helmet';
-
-import { rhythm, scale } from '../utils/typography';
-import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
+import sun from '../assets/sun.png';
+import { rhythm, scale } from '../utils/typography';
+import Toggle from './Toggle';
 
 class Layout extends React.Component {
   state = {
@@ -110,7 +109,7 @@ class Layout extends React.Component {
                 textDecoration: 'none',
                 color: 'rgb(255, 167, 196)',
               }}
-              to={'/thanks'}
+              to={'/about'}
             >
               About
             </Link>

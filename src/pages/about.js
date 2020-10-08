@@ -1,7 +1,7 @@
+import { graphql } from 'gatsby';
+import get from 'lodash/get';
 import React from 'react';
 import Layout from '../components/Layout';
-import get from 'lodash/get';
-import { graphql } from 'gatsby';
 
 class About extends React.Component {
   render() {
@@ -9,13 +9,14 @@ class About extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <main>
-          <h1>
-            This is my personal blog, source for this blog is forked from
-            overreacted.io.{' '}
-          </h1>
           <p>
-            You are now confirmed. You can expect to receive emails as I create
-            new content.
+            This is my personal blog. Inspired by{' '}
+            <a href="https://overreacted.io/">overreacted.io's</a> blog.
+          </p>
+          <p>
+            Forked from here :{' '}
+            <a href="https://github.com/gaearon/overreacted.io">github</a>.
+            Thanks Dan!
           </p>
         </main>
       </Layout>
@@ -24,7 +25,7 @@ class About extends React.Component {
 }
 
 export const pageQuery = graphql`
-  query ThanksSiteData {
+  query AboutSiteData {
     site {
       siteMetadata {
         title
